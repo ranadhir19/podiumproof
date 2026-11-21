@@ -1,0 +1,706 @@
+{
+  "agents": {
+    "a001": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Strip the problem to what is given and rebuild.",
+          "id": "first-principles",
+          "name": "First principles"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a016",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m02.a001.solution.md"
+    },
+    "a002": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Solve a small case by hand, then generalize.",
+          "id": "worked-example",
+          "name": "Worked example"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a012",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m05.a002.solution.md"
+    },
+    "a003": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Work backwards from the quantity asked for.",
+          "id": "inversion",
+          "name": "Inversion"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a008",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m01.a003.solution.md"
+    },
+    "a004": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Strip the problem to what is given and rebuild.",
+          "id": "first-principles",
+          "name": "First principles"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a011",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m07.a004.solution.md"
+    },
+    "a005": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Solve a small case by hand, then generalize.",
+          "id": "worked-example",
+          "name": "Worked example"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a006",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m04.a005.solution.md"
+    },
+    "a006": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Work backwards from the quantity asked for.",
+          "id": "inversion",
+          "name": "Inversion"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a007",
+      "eliminated_in": 2,
+      "solution": "r2/r2-m02.a006.solution.md"
+    },
+    "a007": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Strip the problem to what is given and rebuild.",
+          "id": "first-principles",
+          "name": "First principles"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a012",
+      "eliminated_in": 4,
+      "solution": "r4/r4-m01.a007.solution.md"
+    },
+    "a008": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Solve a small case by hand, then generalize.",
+          "id": "worked-example",
+          "name": "Worked example"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a007",
+      "eliminated_in": 3,
+      "solution": "r3/r3-m01.a008.solution.md"
+    },
+    "a009": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Work backwards from the quantity asked for.",
+          "id": "inversion",
+          "name": "Inversion"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a007",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m03.a009.solution.md"
+    },
+    "a010": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Strip the problem to what is given and rebuild.",
+          "id": "first-principles",
+          "name": "First principles"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a013",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m06.a010.solution.md"
+    },
+    "a011": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Solve a small case by hand, then generalize.",
+          "id": "worked-example",
+          "name": "Worked example"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a015",
+      "eliminated_in": 2,
+      "solution": "r2/r2-m04.a011.solution.md"
+    },
+    "a012": {
+      "alive": true,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Work backwards from the quantity asked for.",
+          "id": "inversion",
+          "name": "Inversion"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": null,
+      "eliminated_in": null,
+      "solution": "r4/r4-m01.a012.solution.md"
+    },
+    "a013": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Strip the problem to what is given and rebuild.",
+          "id": "first-principles",
+          "name": "First principles"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a012",
+      "eliminated_in": 2,
+      "solution": "r2/r2-m03.a013.solution.md"
+    },
+    "a014": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Solve a small case by hand, then generalize.",
+          "id": "worked-example",
+          "name": "Worked example"
+        },
+        "strategy": {
+          "how": "Prefer the shortest correct path.",
+          "id": "simplest",
+          "name": "Simplest thing that works"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a015",
+      "eliminated_in": 1,
+      "solution": "r1/r1-m08.a014.solution.md"
+    },
+    "a015": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Work backwards from the quantity asked for.",
+          "id": "inversion",
+          "name": "Inversion"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "Write a full draft, then attack it yourself.",
+          "id": "draft-revise",
+          "name": "Draft, then revise"
+        }
+      },
+      "eliminated_by": "a012",
+      "eliminated_in": 3,
+      "solution": "r3/r3-m02.a015.solution.md"
+    },
+    "a016": {
+      "alive": false,
+      "byes": 0,
+      "card": {
+        "reasoning": {
+          "how": "Strip the problem to what is given and rebuild.",
+          "id": "first-principles",
+          "name": "First principles"
+        },
+        "strategy": {
+          "how": "Hunt the boundary cases before the main line.",
+          "id": "edge-cases",
+          "name": "Edge cases first"
+        },
+        "workflow": {
+          "how": "State the checks the answer must pass before solving.",
+          "id": "test-first",
+          "name": "Test first"
+        }
+      },
+      "eliminated_by": "a008",
+      "eliminated_in": 2,
+      "solution": "r2/r2-m01.a016.solution.md"
+    }
+  },
+  "agents_n": 16,
+  "cards_available": 2160,
+  "champion": "a012",
+  "created": "2026-11-20 12:00:00",
+  "dir": ".",
+  "final": null,
+  "has_baseline": false,
+  "rounds": [
+    {
+      "alive": [
+        "a001",
+        "a002",
+        "a003",
+        "a004",
+        "a005",
+        "a006",
+        "a007",
+        "a008",
+        "a009",
+        "a010",
+        "a011",
+        "a012",
+        "a013",
+        "a014",
+        "a015",
+        "a016"
+      ],
+      "bye": null,
+      "closed": true,
+      "matches": [
+        {
+          "a": "a008",
+          "b": "a003",
+          "id": "r1-m01",
+          "loser": "a003",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a003": 87.25,
+            "a008": 61.15
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a008"
+        },
+        {
+          "a": "a001",
+          "b": "a016",
+          "id": "r1-m02",
+          "loser": "a001",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a001": 38.95,
+            "a016": 61.75
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a016"
+        },
+        {
+          "a": "a007",
+          "b": "a009",
+          "id": "r1-m03",
+          "loser": "a009",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a007": 33.05,
+            "a009": 27.7
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a007"
+        },
+        {
+          "a": "a006",
+          "b": "a005",
+          "id": "r1-m04",
+          "loser": "a005",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a005": 34.95,
+            "a006": 56.8
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a006"
+        },
+        {
+          "a": "a012",
+          "b": "a002",
+          "id": "r1-m05",
+          "loser": "a002",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a002": 40.3,
+            "a012": 44.8
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a012"
+        },
+        {
+          "a": "a013",
+          "b": "a010",
+          "id": "r1-m06",
+          "loser": "a010",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a010": 55.2,
+            "a013": 52.05
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a013"
+        },
+        {
+          "a": "a011",
+          "b": "a004",
+          "id": "r1-m07",
+          "loser": "a004",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a004": 47.8,
+            "a011": 50.05
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a011"
+        },
+        {
+          "a": "a014",
+          "b": "a015",
+          "id": "r1-m08",
+          "loser": "a014",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a014": 44.2,
+            "a015": 44.65
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a015"
+        }
+      ],
+      "n": 1
+    },
+    {
+      "alive": [
+        "a006",
+        "a007",
+        "a008",
+        "a011",
+        "a012",
+        "a013",
+        "a015",
+        "a016"
+      ],
+      "bye": null,
+      "closed": true,
+      "matches": [
+        {
+          "a": "a008",
+          "b": "a016",
+          "id": "r2-m01",
+          "loser": "a016",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a008": 58.45,
+            "a016": 62.2
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a008"
+        },
+        {
+          "a": "a007",
+          "b": "a006",
+          "id": "r2-m02",
+          "loser": "a006",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a006": 58.55,
+            "a007": 52.95
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a007"
+        },
+        {
+          "a": "a012",
+          "b": "a013",
+          "id": "r2-m03",
+          "loser": "a013",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a012": 40.95,
+            "a013": 35.55
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a012"
+        },
+        {
+          "a": "a015",
+          "b": "a011",
+          "id": "r2-m04",
+          "loser": "a011",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a011": 38.1,
+            "a015": 39.65
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a015"
+        }
+      ],
+      "n": 2
+    },
+    {
+      "alive": [
+        "a007",
+        "a008",
+        "a012",
+        "a015"
+      ],
+      "bye": null,
+      "closed": true,
+      "matches": [
+        {
+          "a": "a007",
+          "b": "a008",
+          "id": "r3-m01",
+          "loser": "a008",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a007": 45.9,
+            "a008": 44.1
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a007"
+        },
+        {
+          "a": "a015",
+          "b": "a012",
+          "id": "r3-m02",
+          "loser": "a015",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a012": 45.65,
+            "a015": 31.0
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a012"
+        }
+      ],
+      "n": 3
+    },
+    {
+      "alive": [
+        "a007",
+        "a012"
+      ],
+      "bye": null,
+      "closed": true,
+      "matches": [
+        {
+          "a": "a007",
+          "b": "a012",
+          "id": "r4-m01",
+          "loser": "a007",
+          "reason": "Higher rubric total on the revised solutions.",
+          "scores": {
+            "a007": 31.15,
+            "a012": 45.3
+          },
+          "source": "judge",
+          "survived": [
+            "attack on the arithmetic was answered"
+          ],
+          "winner": "a012"
+        }
+      ],
+      "n": 4
+    }
+  ],
+  "seed": 7,
+  "version": 1,
+  "wave": 10
+}

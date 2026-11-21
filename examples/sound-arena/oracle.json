@@ -1,0 +1,27 @@
+{
+  "answers": {
+    "a001": "108",
+    "a002": "35",
+    "a003": "81",
+    "a004": "29",
+    "a005": "35",
+    "a006": "23",
+    "a007": "35",
+    "a008": "26"
+  },
+  "correct_answer": "35",
+  "fatal_flaw": [
+    "a006"
+  ],
+  "scores": {
+    "a001": 0.25,
+    "a002": 0.8,
+    "a003": 0.3,
+    "a004": 0.45,
+    "a005": 1.0,
+    "a006": 0.2,
+    "a007": 0.55,
+    "a008": 0.38
+  },
+  "task": "A baker makes 9 trays with 12 rolls on each tray. He sells 73 rolls. How many rolls are left?"
+}

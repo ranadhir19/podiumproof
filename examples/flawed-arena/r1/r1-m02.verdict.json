@@ -1,0 +1,29 @@
+{
+  "reason": "Higher rubric total on the revised solutions.",
+  "scores": {
+    "a001": {
+      "clarity": 4.0,
+      "completeness": 3.8,
+      "correctness": 3.6,
+      "fatal": false,
+      "robustness": 4.1,
+      "specificity": 4.3
+    },
+    "a016": {
+      "clarity": 5.8,
+      "completeness": 5.8,
+      "correctness": 6.6,
+      "fatal": false,
+      "robustness": 5.8,
+      "specificity": 6.7
+    }
+  },
+  "standing": {
+    "a001": [],
+    "a016": []
+  },
+  "survived": [
+    "attack on the arithmetic was answered"
+  ],
+  "winner": "a016"
+}

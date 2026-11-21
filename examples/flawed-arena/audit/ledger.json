@@ -1,0 +1,186 @@
+{
+  "claims": [
+    {
+      "check": "winner-vs-oracle",
+      "claim": "The champion is the best candidate in its own pool.",
+      "evidence": {
+        "champion": "a012",
+        "champion_final_answer_score": 0.0,
+        "champion_pool_rank": 7,
+        "champion_spawn_score": 0.34,
+        "oracle_best_score": 1.0,
+        "pool_size": 16,
+        "regret": 0.66
+      },
+      "id": "C1a",
+      "note": "Ranked on spawn-pool oracle scores, like-for-like. The champion's revised final answer is scored separately when a key exists.",
+      "verdict": "REFUTED"
+    },
+    {
+      "check": "winner-vs-oracle",
+      "claim": "The pool held headroom worth selecting over: its best candidate beats its first sample by more than noise.",
+      "evidence": {
+        "first_sample": "a001",
+        "first_sample_score": 0.3,
+        "headroom": 0.7,
+        "oracle_best_score": 1.0
+      },
+      "id": "C1b",
+      "note": null,
+      "verdict": "SUPPORTED"
+    },
+    {
+      "check": "champion-stability",
+      "claim": "The champion is the stable outcome of this bracket, not a seeding artefact.",
+      "evidence": {
+        "champion_reproduction_rate": 0.055,
+        "distinct_champions_in_replays": 16,
+        "modal_champion": "a009",
+        "modal_rate": 0.115,
+        "oracle_best_win_rate": 0.055,
+        "replays": 200
+      },
+      "id": "C2",
+      "note": "Model-based replay: brackets re-seeded 200 times, matches judged by the judge model fitted to this run's own recorded matches. Not a re-run of the real judge.",
+      "verdict": "REFUTED"
+    },
+    {
+      "check": "judge-validity",
+      "claim": "The judge picked the better candidate more often than chance.",
+      "evidence": {
+        "decisive_matches": 15,
+        "judge_accuracy_on_decisive_matches": 0.4667,
+        "wilson_95_ci": [
+          0.2481,
+          0.6988
+        ]
+      },
+      "id": "C3a",
+      "note": "Decisive = the oracle separates the two candidates. SUPPORTED needs the whole 95% Wilson interval above 0.5; a point estimate at or below 0.5 is REFUTED; between them the run is too small to tell.",
+      "verdict": "REFUTED"
+    },
+    {
+      "check": "judge-validity",
+      "claim": "The judge's verdicts are free of material position bias (presentation order does not decide matches).",
+      "evidence": {
+        "alpha_standard_error": 0.6479,
+        "alpha_z": 1.546,
+        "estimated_swap_consistency": 0.393,
+        "first_listed_win_rate": 0.7333,
+        "gap_sensitivity_beta": -0.0852,
+        "position_bias_alpha": 1.0018
+      },
+      "id": "C3b",
+      "note": "A true swapped re-judgement needs the judge itself; offline, swap consistency is estimated from the fitted judge model and labelled as an estimate.",
+      "verdict": "REFUTED"
+    },
+    {
+      "check": "judge-validity",
+      "claim": "A candidate carrying a known fatal flaw is stopped well before the final.",
+      "evidence": {
+        "canary_fates": {
+          "a007": "reached the final round"
+        },
+        "matches_where_judge_flagged_the_flaw": {
+          "a007": 0
+        },
+        "total_rounds": 4
+      },
+      "id": "C3c",
+      "note": null,
+      "verdict": "REFUTED"
+    },
+    {
+      "check": "cost-ledger",
+      "claim": "The champion beat the honest baselines the spend had to justify (first sample, random pick, majority vote).",
+      "evidence": {
+        "baselines": {
+          "best_of_n_by_execution": 1.0,
+          "first_sample": 0.3,
+          "majority_vote": 0.2667,
+          "random_pick_expected": 0.3656
+        },
+        "champion_spawn_score": 0.34,
+        "premiums": {
+          "first_sample": 0.04,
+          "majority_vote": 0.0733,
+          "random_pick_expected": -0.0256
+        },
+        "total_sub_agent_calls": 91
+      },
+      "id": "C4",
+      "note": "Best-of-N by execution (the oracle ceiling) is printed for scale; it is not a baseline the tournament had to beat, it is what checking every candidate directly would have found.",
+      "verdict": "REFUTED"
+    }
+  ],
+  "cost_ledger": {
+    "baselines": {
+      "best_of_n_by_execution": 1.0,
+      "first_sample": 0.3,
+      "majority_vote": 0.2667,
+      "random_pick_expected": 0.3656
+    },
+    "calls": {
+      "final_check": 0,
+      "match_calls": 75,
+      "matches": 15,
+      "per_match": 5,
+      "spawn": 16,
+      "total": 91
+    },
+    "majority_modal_answer": "42",
+    "majority_votes": {
+      "12": 2,
+      "2": 1,
+      "20": 1,
+      "35": 1,
+      "38": 2,
+      "42": 6,
+      "45": 1,
+      "5": 1,
+      "8": 1
+    },
+    "premiums": {
+      "first_sample": 0.04,
+      "majority_vote": 0.0733,
+      "random_pick_expected": -0.0256
+    }
+  },
+  "judge_model": {
+    "accuracy": 0.4666666666666667,
+    "accuracy_ci": [
+      0.24809535232620925,
+      0.6988302012468901
+    ],
+    "alpha_position_bias": 1.0018156910302878,
+    "beta_gap_sensitivity": -0.08516896272539513,
+    "decisive_matches": 15,
+    "estimated_swap_consistency": 0.39295366600854276,
+    "first_listed_win_rate": 0.7333333333333333,
+    "fitted": true,
+    "reason": null
+  },
+  "oracle_sources": [
+    "oracle file oracle.json"
+  ],
+  "replay": {
+    "champion_reproduction_rate": 0.055,
+    "distinct_champions": 16,
+    "modal_champion": "a009",
+    "modal_rate": 0.115,
+    "oracle_best_win_rate": 0.055,
+    "replays": 200,
+    "seed": 20261120
+  },
+  "run": {
+    "agents": 16,
+    "champion": "a012",
+    "dir": "/home/hatch/workspace/builds/podiumproof/examples/flawed-arena",
+    "matches": 15,
+    "rounds": 4,
+    "seed": 7
+  },
+  "stamp": "JUDGE ARTEFACT",
+  "tool": "podiumproof",
+  "version": "0.1.0"
+}

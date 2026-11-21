@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "podiumproof"
+version = "0.1.0"
+description = "Audit a finished LLM tournament against ground truth: winner-vs-oracle rank, champion stability under re-seeding, in-situ judge validity, and a cost ledger against honest baselines."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ranadhir Ghosh" }]
+keywords = ["llm", "evaluation", "tournament", "best-of-n", "llm-as-judge", "audit"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+podiumproof = "podiumproof.cli:main"
+
+[tool.setuptools]
+packages = ["podiumproof"]
